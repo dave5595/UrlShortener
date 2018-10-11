@@ -53,8 +53,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+            <state relative-caret-position="272">
+              <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -317,7 +317,7 @@
       <updated>1539192268950</updated>
       <workItem from="1539192270450" duration="6108000" />
       <workItem from="1539234982125" duration="1549000" />
-      <workItem from="1539241948449" duration="6205000" />
+      <workItem from="1539241948449" duration="6558000" />
     </task>
     <task id="LOCAL-00001" summary="modified public ip for server">
       <created>1539242584976</created>
@@ -347,11 +347,25 @@
       <option name="project" value="LOCAL" />
       <updated>1539249823440</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed host">
+      <created>1539250566188</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1539250566188</updated>
+    </task>
+    <task id="LOCAL-00006" summary="changed port">
+      <created>1539250717164</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1539250717164</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13862000" />
+    <option name="totallyTimeSpent" value="14215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -400,7 +414,9 @@
     <MESSAGE value="renaming file" />
     <MESSAGE value="changed server host to ec2 public domain" />
     <MESSAGE value="refactored code" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored code" />
+    <MESSAGE value="changed host" />
+    <MESSAGE value="changed port" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed port" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tests/models/url.js">
@@ -696,8 +712,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        <state relative-caret-position="272">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
         </state>
       </provider>
     </entry>
