@@ -1,0 +1,33 @@
+{
+  "development": {
+    "username": "dave5595",
+    "password": "test",
+    "database": "tinyurl_development",
+    "host": "172.31.17.70",
+    "dialect": "postgres",
+    "pool": {
+      "max": 20
+    }
+  },
+  "test": {
+    "username": "dave5595",
+    "password": null,
+    "database": "tinyurl_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "dave5595",
+    "password": null,
+    "database": "tinyurl_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "circleci_test": {
+    "username": "postgres",
+    "password": "root",
+    "database": "tinyurl_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
