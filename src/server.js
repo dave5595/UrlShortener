@@ -11,7 +11,7 @@ redisClient.on('error', (error) => {
 
 const server = new Hapi.Server({
 });
-server.connection({ port: 8080, host: '0.0.0.0' });
+server.connection({ port: 8080, host: 'ec2-54-179-186-164.ap-southeast-1.compute.amazonaws.com' });
 server.route(Routes(redisClient));
 
 server.register({
