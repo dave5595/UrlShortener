@@ -1,7 +1,7 @@
 const createUrlLib = require('../lib/createUrl');
 const Models = require('../models');
 
-module.exports = redisClient => [{
+module.exports = [{
   method: 'POST',
   path: '/shorten',
   handler: (request, response) => {
@@ -15,23 +15,12 @@ module.exports = redisClient => [{
   method: 'GET',
   path: '/longUrl',
   handler: (request, response) => {
-    const hashObject = 'shortUrls';
     const shortUrl = request.query.code;
-    let originalUrl = null;
-    redisClient.hget(hashObject, shortUrl, (err, redisResult) => {
-      if (redisResult === null) {
-        Models.urls.getLongUrl(shortUrl).then((result) => {
-          if (result !== null) {
-            ({ originalUrl } = result);
-            redisClient.hset(hashObject, shortUrl, originalUrl);
-            response({ originalUrl });
-          } else {
-            response({ originalUrl: 'Not found' });
-          }
-        });
+    Models.urls.getLongUrl(shortUrl).then((result) => {
+      if (result !== null) {
+        response({ originalUrl: result.originalUrl });
       } else {
-        originalUrl = redisResult;
-        response({ originalUrl });
+        response({ originalUrl: 'Not found' });
       }
     });
   },
