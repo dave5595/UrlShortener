@@ -13,8 +13,8 @@ echo '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm' >> /hom
 . /home/ubuntu/.bashrc
 # Install NVM, NPM, Node.JS & Grunt
 cd /home/ubuntu/
-git clone https://github.com/abhinavdhasmana/tinyUrl.git ##change the url
-cd tinyUrl
+git clone https://github.com/dave5595/UrlShortener.git
+cd NodeUrlShortener
 nvm install 8.9.4
 npm install
 npm start

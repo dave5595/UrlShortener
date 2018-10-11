@@ -1,9 +1,9 @@
-onst Hapi = require('hapi');
+const Hapi = require('hapi');
 const Routes = require('./routes');
 const Good = require('good');
 const redis = require('redis');
 
-const redisClient = redis.createClient({ host: '127.0.0.1' });
+const redisClient = redis.createClient({ host: '18.136.203.74' });
 
 redisClient.on('error', (error) => {
   console.log('failed to connect to redis', error); // eslint-disable-line no-console

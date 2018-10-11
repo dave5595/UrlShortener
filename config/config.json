@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "dave5595",
-    "password": "test",
+    "password": null,
     "database": "tinyurl_development",
-    "host": "172.31.17.70",
+    "host": "13.229.197.5",
     "dialect": "postgres",
     "pool": {
       "max": 20
