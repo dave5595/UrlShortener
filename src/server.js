@@ -1,43 +1,19 @@
-'use strict';
-
 const Hapi = require('hapi');
+const routes = require('./routes');
+const Good = require('good');
 
 const server = new Hapi.Server({
-  port: 3000,
-  host: 'localhost'
 });
+server.connection({ port: 8080, host: '0.0.0.0' });
+server.route(routes);
 
-server.route({
-  method: 'GET',
-  path: '/',
-  handler: (request, h) => {
+if (!module.parent) {
+  server.start((err) => {
+    if (err) {
+      throw err;
+    }
+    console.log(`Server running at: ${server.info.uri}`); // eslint-disable-line no-console
+  });
+}
 
-    return 'Hello, world!';
-  }
-});
-
-server.route({
-  method: 'GET',
-  path: '/{name}',
-  handler: (request, h) => {
-
-    return 'Hello, ' + encodeURIComponent(request.params.name) + '!';
-  }
-});
-
-const init = async () => {
-
-  await server.start();
-  console.log(`Server running at: ${server.info.uri}`);
-};
-
-
-
-process.on('unhandledRejection', (err) => {
-
-  console.log(err);
-  process.exit(1);
-});
-
-init();
-// module.exports = server;
+module.exports = server;
